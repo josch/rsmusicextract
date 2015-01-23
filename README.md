@@ -1,11 +1,13 @@
-= About =
+About
+=====
 
 This Python script is able to extract all music tracks from a Runescape cache.
 It is not necessary to have the game installed. Only the cache files need to be
 present in a directory. Specifically the files `main_file_cache.dat2`,
 `main_file_cache.idx17` and `main_file_cache.idx40` are needed.
 
-= Usage =
+Usage
+=====
 
 If you have Runescape installed, you can find the cache in your user directory
 in `jagexcache/runescape/LIVE/`. If you run Runescape under Wine, then they
@@ -23,7 +25,8 @@ You can also add the `--incomplete` option in which case also incomplete music
 tracks will be extracted (or displayed in case you omitted the directory to
 extract to).
 
-= Combining the music =
+Combining the music
+===================
 
 If an output directory is given, then the script will create it if necessary
 and extract the individual music chunks into subdirectories which are named
@@ -59,7 +62,8 @@ chunks in every directory into a single file of the same name:
 		sox --combine concatenate "$dir"/* -C 8 "combined/$dir.flac"; \
 	done
 
-= Origin =
+Origin
+======
 
 This code is inspired by RSCacheTool by Villermen:
 
